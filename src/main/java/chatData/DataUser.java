@@ -1,17 +1,17 @@
 package chatData;
 
-import chatProtocol.User;
+import chatLogic.Contacto;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataUser {
-    List<User> contactos;
+    List<Contacto> contactos;
 
-    public List<User> getContactos() {
+    public List<Contacto> getContactos() {
         return contactos;
     }
 
-    public void setContactos(List<User> contactos) {
+    public void setContactos(List<Contacto> contactos) {
         this.contactos = contactos;
     }
     
