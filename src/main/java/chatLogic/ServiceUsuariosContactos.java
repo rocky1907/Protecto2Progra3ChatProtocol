@@ -34,11 +34,11 @@ public class ServiceUsuariosContactos {
         List<Contacto> result = new ArrayList<>();
         for(Contacto c:data.getContactos()) {if (c.getNombre().contains(o.getNombre())) result.add(c);};
         return result;
-    }    
-    public Contacto buscar(int o){
-        if(data.getContactos().size()>0){
-            return data.getContactos().get(o);
-        }else
-            return null;
+    }   
+    
+    public List<Contacto> buscar(String name){
+        List<Contacto> result = new ArrayList<>();
+        for(Contacto c:data.getContactos()) {if (c.getNombre().equals(name)) result.add(c);};
+        return result;
     }
 }

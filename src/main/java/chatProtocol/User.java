@@ -11,7 +11,7 @@ public class User implements Serializable{
  
     public User() {
     }
-    
+    public boolean conect =false;
     public User(String id, String clave, String nombre) {
         this.id = id;
         this.clave = clave;
