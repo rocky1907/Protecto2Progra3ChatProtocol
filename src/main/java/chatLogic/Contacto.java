@@ -1,7 +1,9 @@
 package chatLogic;
 
 import java.util.Objects;
-
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+@XmlRootElement
 public class Contacto {
     String nombre,id;
 
