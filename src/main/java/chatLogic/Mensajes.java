@@ -7,10 +7,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name="Lensajes")
 public class Mensajes {
     String destinatario;
-    List<String> mensajes;
+    List<Texto> mensajes;
 
     
 
@@ -40,13 +40,13 @@ public class Mensajes {
         this.destinatario = destinatario;
     }
     
-    @XmlElementWrapper(name="Mensajes")
-    @XmlElement(name="mensaje")
-    public List<String> getMensajes() {
+    @XmlElementWrapper(name="Lista")
+    @XmlElement(name="Texto")
+    public List<Texto> getMensajes() {
         return mensajes;
     }
 
-    public void setMensajes(List<String> mensajes) {
+    public void setMensajes(List<Texto> mensajes) {
         this.mensajes = mensajes;
     }
 
